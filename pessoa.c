@@ -47,7 +47,7 @@ mais_velha (struct pessoa** pessoas, int n) {
     int maior_idade = -1;
     struct pessoa* p;
     for (int i=0; i<n; i++) {
-        if (pessoas[i]->idade < maior_idade) {
+        if (pessoas[i]->idade > maior_idade) {
             p = pessoas[i];
             maior_idade = p->idade;
         }
@@ -64,7 +64,7 @@ main() {
         apresenta_pessoa(p[i]);
 
     struct pessoa *anciao = mais_velha(p, num_people);
-    printf("A pessoa mais velha é %s, que tem %d anos de idade.",
+    printf("A pessoa mais velha é %s, que tem %d anos de idade.\n",
            anciao->nome,
            anciao->idade);
 }
