@@ -25,7 +25,7 @@ def main():
         person.greet()
 
     oldest_person = min(people, key=lambda p: p.age)
-    print(f"A pessoa mais velha é {oldest_person.name}, que tem {oldest_person.age} anos de idade.", end="")
+    print(f"A pessoa mais velha é {oldest_person.name}, que tem {oldest_person.age} anos de idade.")
 
 if __name__ == "__main__":
     main()
