@@ -7,7 +7,7 @@ class Person:
         self.age = age
 
     def greet(self):
-        print(f"Olá, meu nome é {self.age} e eu tenho {self.name} anos.")
+        print(f"Olá, meu nome é {self.name} e eu tenho {self.age} anos.")
 
 def create_people(num_people):
     people = []
