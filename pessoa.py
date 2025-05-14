@@ -13,7 +13,7 @@ def create_people(num_people):
     people = []
     for _ in range(num_people):
         name = f"Pessoa {len(people) + 1}"
-        age = random.randint(18, 75)
+        age = random.randint(0, 99)
         people.append(Person(name, age))
     return people
 
