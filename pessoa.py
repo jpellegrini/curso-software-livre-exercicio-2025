@@ -2,19 +2,23 @@
 import random
 
 class Person:
-    def __init__(self, name, age):
+    def __init__(self, name, age, contact):
         self.name = name
         self.age = age
+        self.contact = contact
 
     def greet(self):
-        print(f"Olá, meu nome é {self.name} e eu tenho {self.age} anos.")
+        print(f"Olá, meu nome é {self.name}, eu tenho {self.age} anos e meu contato é {self.contact}.")
 
 def create_people(num_people):
     people = []
     for _ in range(num_people):
         name = f"Pessoa {len(people) + 1}"
         age = random.randint(0, 99)
-        people.append(Person(name, age))
+        contact = "119"
+        for i in range(8):
+            contact += str(random.randint(0, 9))
+        people.append(Person(name, age, contact))
     return people
 
 def main():
