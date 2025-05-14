@@ -47,7 +47,7 @@ mais_velha (struct pessoa** pessoas, int n) {
     int maior_idade = -1;
     struct pessoa* p;
     for (int i=0; i<n; i++) {
-        if (pessoas[i]->idade < maior_idade) {
+        if (pessoas[i]->idade > maior_idade) {
             p = pessoas[i];
             maior_idade = p->idade;
         }
